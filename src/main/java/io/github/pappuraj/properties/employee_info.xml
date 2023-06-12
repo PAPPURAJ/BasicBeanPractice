@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<bean class="io.github.pappuraj.properties.Employee" name="Emp1">
+		<property name="name" value="Keya" />
+		<property name="friends">
+			<list>
+				<value> Kaspiya </value>
+				<value> Tohe </value>
+			</list>
+
+		</property>
+
+		<property name="skills">
+			<set>
+				<value>Java</value>
+				<value>XML</value>
+				<value>Flutter</value>
+
+			</set>
+		</property>
+
+		<property name="workExp">
+			<map>
+				<entry key="Project2Morrow" value="4 years"/>
+				<entry key="Samsung" value="2years"/>
+			</map>
+		</property>
+
+
+	</bean>
+
+
+
+</beans>
