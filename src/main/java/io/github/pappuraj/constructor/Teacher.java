@@ -18,5 +18,6 @@ public class Teacher {
 	public String toString() {
 		return "Teacher [name=" + name + ", des=" + des + ", student=" + student + "]";
 	}
+	
 
 }
