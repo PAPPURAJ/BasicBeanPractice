@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+<bean class="io.github.pappuraj.reference.JuniorEngineer" name="JEng1">
+	<property name="name" value="Pappuraj"/>
+	<property name="framework" value="SpringBoot"/>
+</bean>
+
+<bean class="io.github.pappuraj.reference.JuniorEngineer" name="JEng2">
+	<property name="name" value="Keya"/>
+	<property name="framework" value="Flutter"/>
+</bean>
+
+<bean class="io.github.pappuraj.reference.SeniorEngineer" name="SEng1">
+	<property name="name" value="Sunil sir"/>
+	<property name="juniorEngineer">
+		<ref bean="JEng1"/>
+	</property>
+</bean>
+
+
+
+
+
+
+
+
+
+</beans>

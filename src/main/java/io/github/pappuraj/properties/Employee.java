@@ -6,16 +6,18 @@ public class Employee {
 	private List<String> friends;
 	private Set<String> skills;
 	private Map<String, String> workExp;
+	private Properties prop;
 	public Employee() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
-	public Employee(String name, List<String> friends, Set<String> skills, Map<String, String> workExp) {
+	public Employee(String name, List<String> friends, Set<String> skills, Map<String, String> workExp,
+			Properties prop) {
 		super();
 		this.name = name;
 		this.friends = friends;
 		this.skills = skills;
 		this.workExp = workExp;
+		this.prop = prop;
 	}
 	public String getName() {
 		return name;
@@ -41,6 +43,13 @@ public class Employee {
 	public void setWorkExp(Map<String, String> workExp) {
 		this.workExp = workExp;
 	}
+	public Properties getProp() {
+		return prop;
+	}
+	public void setProp(Properties prop) {
+		this.prop = prop;
+	}
+	
 	
 	
 		
