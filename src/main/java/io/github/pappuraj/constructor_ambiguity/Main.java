@@ -1,4 +1,4 @@
-package io.github.pappuraj.construction_ambiguity;
+package io.github.pappuraj.constructor_ambiguity;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

@@ -1,4 +1,4 @@
-package io.github.pappuraj.construction_ambiguity;
+package io.github.pappuraj.constructor_ambiguity;
 
 public class Calculation {
 		public Calculation(int a, int b) {
