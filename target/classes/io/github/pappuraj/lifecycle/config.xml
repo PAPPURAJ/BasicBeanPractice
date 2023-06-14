@@ -8,10 +8,14 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
 
-<bean class="io.github.pappuraj.construction_ambiguity.Calculation" name="in1" init-method="onInit" destroy-method="onDestroy">
-	<constructor-arg value="2" />
-	<constructor-arg value="5"/>
-</bean>
+	<context:annotation-config/>
+
 	
+	<bean class="io.github.pappuraj.lifecycle.RoboticsComponents" name="arduino">
+		<constructor-arg value="Arduino UNO"/>
+		<constructor-arg value="2700" />
+		
+	</bean>
+
 
 </beans>

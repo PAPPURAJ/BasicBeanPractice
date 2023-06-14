@@ -15,6 +15,8 @@ public class Calculation {
 		
 		public Calculation(String a, String b) {
 			System.out.println("Calculated by String: "+(Integer.parseInt(a)+Integer.parseInt(b)));
+		
+			System.out.print(a+"/"+b);
 		}
 		
 		

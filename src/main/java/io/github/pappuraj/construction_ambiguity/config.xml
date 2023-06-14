@@ -9,8 +9,8 @@
            http://www.springframework.org/schema/context/spring-context.xsd">
 
 <bean class="io.github.pappuraj.construction_ambiguity.Calculation" name="in1" init-method="onInit" destroy-method="onDestroy">
-	<constructor-arg value="2"/>
-	<constructor-arg value="5" type="float"/>
+	<constructor-arg value="2" />
+	<constructor-arg value="5"/>
 </bean>
 	
 
